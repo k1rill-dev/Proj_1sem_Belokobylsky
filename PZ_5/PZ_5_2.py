@@ -17,6 +17,5 @@ def main():
     mean(a, c)
     mean(a, d)
 
-#комментарий
 if __name__ == "__main__":
     main()
