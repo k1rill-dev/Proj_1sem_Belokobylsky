@@ -6,10 +6,7 @@ import random
 # (lambda a: print(len(a), a))(
 #     list(map(lambda x: x[0], filter(lambda x: x[1], enumerate(list(map(lambda x: n[n.index(x) - 1] < x, n)))))))
 
-n = []
-result = list()
-a = list()
-
+n, result, a = list(), list(), list()
 try:
     for i in range(random.randint(0, 100)):
         n.append(random.randint(0, 100))
