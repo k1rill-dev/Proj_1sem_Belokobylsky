@@ -10,10 +10,11 @@ n, result, a = list(), list(), list()
 try:
     for i in range(random.randint(0, 100)):
         n.append(random.randint(0, 100))
-    for i in n:
-        a.append(n[n.index(i) - 1] < n[n.index(i)])
+    for i in range(len(n)-1):
+        a.append(n[i-1] < n[i])
     for i in list(filter(lambda x: x[1], list(enumerate(a)))):
         result.append(i[0])
+    result = result[:0:-1]
 except Exception as e:
     print(f"Произошла ошибка - {str(e)}")
 
