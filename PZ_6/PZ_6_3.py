@@ -5,9 +5,8 @@
 import random
 
 n = []
-# for i in range(random.randint(1, 100)):
-#     n.append(random.randint(1, 100))
-n = []
+for i in range(random.randint(1, 100)):
+    n.append(random.randint(1, 100))
 min_index = n.index(min(n))
 max_index = n.index(max(n))
 for i in range(len(n)):
