@@ -5,12 +5,12 @@
 import random
 
 n = []
-for i in range(random.randint(1, 100)):
-    n.append(random.randint(1, 100))
-
+# for i in range(random.randint(1, 100)):
+#     n.append(random.randint(1, 100))
+n = []
 min_index = n.index(min(n))
 max_index = n.index(max(n))
 for i in range(len(n)):
-    if min_index < i < max_index:
+    if min_index < i < max_index or min_index > i > max_index:
       n[i] = 0
 print(n)
